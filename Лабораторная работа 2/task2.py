@@ -12,6 +12,6 @@ for month in range(months):
     if salary < spend:
         money_capital += (spend - salary)
 
-money_capital = round(money_capital)
+money_capital = math.ceil(money_capital)
 
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", money_capital)
